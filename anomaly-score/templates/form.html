@@ -1,0 +1,21 @@
+{% extends 'index.html' %} 
+{% block content %} 
+<form method="POST" action="/prediction">
+    <h1>Anomaly prediction for wind turbines</h1>
+    <label for="temperature">Temperature (°C)</label>
+    <input type="text" id="temperature" name="temperature" required="required">
+    <br>
+    <label for="humidity">Humidity (%)</label>
+    <input type="text" id="humidity" name="humidity" required="required">
+    <br>
+    <label for="sound_volume">Sound Volume (dB)</label>
+    <input type="text" id="sound_volume" name="sound_volume" required="required">
+    <br>
+    <input type="submit" placeholder="submit">
+</form>
+<style>
+    form {
+        text-align: center;
+    }
+</style>
+{% endblock %} 
